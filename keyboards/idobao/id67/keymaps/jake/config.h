@@ -14,8 +14,8 @@
     // change saturation and hue step size
     #undef RGBLIGHT_HUE_STEP
     #undef RGBLIGHT_SAT_STEP
-    #define RGBLIGHT_SAT_STEP 5
-    #define RGBLIGHT_HUE_STEP 5
+    #define RGBLIGHT_SAT_STEP 1
+    #define RGBLIGHT_HUE_STEP 1
 
     #define RGB_MATRIX_KEYPRESSES
 
@@ -76,7 +76,7 @@
     #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE// Pulses keys hit to hue & value then fades value out
     #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE       // Static single hue, pulses keys hit to shifted hue then fades to current hue
     #undef ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE       // Hue & value pulse near a single key hit then fades value out
-    #undef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH    // Hue & value pulse away from multiple key hits then fades value out
+    #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH    // Hue & value pulse away from multiple key hits then fades value out
     // #endif // # if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
 #endif // # if defined(RGB_MATRIX_ENABLE)
 
